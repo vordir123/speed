@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IoT Dashboard</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <h1>IoT Dashboard</h1>
+  <nav>
+    <button data-tab="esp32">ESP32</button>
+    <button data-tab="teensy">Teensy 4.1</button>
+    <button id="serial-connect">Connect Serial</button>
+  </nav>
+  <section id="esp32" class="tab">
+    <h2>ESP32 Pin Control</h2>
+    <label>ESP32 IP: <input type="text" id="esp32-ip" placeholder="192.168.4.1" /></label>
+    <div id="esp32-pins"></div>
+  </section>
+  <section id="teensy" class="tab hidden">
+    <h2>Teensy 4.1 Control & ML</h2>
+    <div id="teensy-pins"></div>
+    <div>
+      <h3>ML Identification</h3>
+      <button id="request-analysis">Request Analysis</button>
+      <pre id="ml-output"></pre>
+    </div>
+  </section>
+  <section>
+    <h2>Serial Output</h2>
+    <pre id="serial-log"></pre>
+  </section>
+  <script src="js/app.js"></script>
+</body>
+</html>

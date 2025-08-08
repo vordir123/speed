@@ -1,0 +1,7 @@
+body { font-family: Arial, sans-serif; margin: 0; padding: 1rem; }
+nav button { margin-right: 0.5rem; }
+.tab { margin-top: 1rem; }
+.hidden { display: none; }
+#esp32-pins button, #teensy-pins button { display:block; margin:0.2rem 0; }
+#serial-log { background:#000; color:#0f0; height:200px; overflow-y:scroll; padding:0.5rem; }
+@media (max-width:600px) { body { font-size: 0.9rem; } }
